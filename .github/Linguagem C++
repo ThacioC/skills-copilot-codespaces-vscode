@@ -25,3 +25,474 @@ int main() {
     system("pause");
 
 }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    string nome;
+    float n1, n2 = 5;
+
+    //Entradas
+    cout << "Digite o nome do produto que deseja comprar: ";
+    cin >> nome;
+    cout << "Digite o valor do produto: ";
+    cin >> n1;
+
+    //Saída
+    cout << "O produto " << nome << " pode ser vendido em 5x de R$ " << n1 / n2 << endl;
+    system("pause");
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    float n1, n2, div;
+
+    cout << "Digite a distância que você percorreu: ";
+    cin >> n1;
+    cout << "Digite a quantidade de combustível gasta pelo veículo: ";
+    cin >> n2;
+
+    div = n1 / n2;
+
+    cout << "O consumo médio do seu veículo é de " << div << "km por Litros" << endl;
+    system("pause");
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    char nome[30];
+    float b1, b2, b3, b4, medaritmetica, soma,somasemestral1, somasemestral2, mediaaritmetica_S1, mediaaritmetica_S2;
+
+    cout << "Digite seu nome: ";
+    cin >> nome;
+    cout << "Digite a nota do seu primeiro bimestre: ";
+    cin >> b1;
+    cout << "Digite a nota do seu segundo bimestre: ";
+    cin >> b2;
+    cout << "Digite a nota do seu terceiro bimestre: ";
+    cin >> b3;
+    cout << "Digite a nota do seu quarto bimestre: ";
+    cin >> b4;
+
+    soma = b1 + b2 + b3 + b4;
+    medaritmetica = soma / 4;
+    somasemestral1 = b1 + b2;
+    somasemestral2 = b3 + b4;
+    mediaaritmetica_S1 = somasemestral1 / 2;
+    mediaaritmetica_S2 = somasemestral2 / 2;
+
+
+
+    cout << nome << " sua média anual é: " << medaritmetica << endl;
+    cout << nome << " sua média do primeiro semestre é: " << mediaaritmetica_S1 << endl;
+    cout << nome << " sua média do segundo semestre é: " << mediaaritmetica_S2 << endl;
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float n1, n2, mult, soma;
+
+    cout << "Digite o preço de custo do produto: R$ ";
+    cin >>  n1;
+    cout << "Digite a margem de lucro em porcentagem: ";
+    cin >> n2;
+
+    mult = n1 * n2 / 100;
+    soma = n1 + mult;
+
+    cout << "Preço de venda do produto com adição da margem de lucro: "<< soma << endl;
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float n1, n2, comissao, salario_final, per_sf_sb1, per_sf_sb, per_sf_sb2;
+    string nome;
+
+    cout << "Digite o nome do vendedor: ";
+    cin >> nome;
+    cout << "Digite o salário base mensal correspondente ao vendedor " << nome << ": R$ ";
+    cin >> n1;
+    cout << "Digite o valor total de vendas realizadas pelo vendedor " << nome << " no mês: R$ ";
+    cin >> n2;
+ 
+    comissao = n2 * 15 / 100;
+    salario_final = comissao + n1;
+    per_sf_sb = salario_final - n1;
+    per_sf_sb1 = salario_final * 100;
+    per_sf_sb2 = per_sf_sb1 / n1;
+    
+    cout << "O vendedor " << nome << " possui um salario final no valor de: R$ " << salario_final << " assim recebendo " << per_sf_sb2 << "% em relação ao seu salário base mensal!" << endl;
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float nm, nv, nr, nc, nkml,soma, soma1, soma2, num_abastc;
+
+    cout << "Qual o comprimento da pista em metros: ";
+    cin >> nm;
+    cout << "Qual o número total de voltas a serem percorridas no grande prêmio: ";
+    cin >> nv;
+    cout << "Qual o número de reabastecimentos desejados: ";
+    cin >> nr;
+    cout << "Qual o consumo de combustível do carro em Km/L: ";
+    cin >> nkml;
+
+    soma = nm * nv;
+    soma1 = soma / 1000;
+    soma2 = soma1 / nkml;
+    num_abastc = soma2 / nr;
+
+    cout << "O número mínimo de litros necessários para até o primeiro reabastecimento é de " << num_abastc << "L" << endl;
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float a, b;
+
+    cout << "Valor de a = ";
+    cin >> a;
+    cout << "Valor de b = ";
+    cin >> b;
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    cout << "O valor de a é " << a << " o valor de b é " << b << endl;
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float n1, n2, n3, div_p, div_p1, div_p2;
+
+    cout << "Digite sua 1ª nota: ";
+    cin >> n1;
+    cout << "Digite sua 2ª nota: ";
+    cin >> n2;
+    cout << "Digite sua 3ª nota: ";
+    cin >> n3;
+
+    div_p = n1 + n2 + n3;
+    div_p1 = 1 + 2 + 3;
+    div_p2 = div_p / div_p1;
+
+    cout << "Sua média final é " << div_p2 << endl;
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float n1, n2, div_s1, div_s;
+
+    cout << "Digite seu salário: R$";
+    cin >> n1;
+
+    div_s1 = n1 * 0.25;
+    div_s = div_s1 + n1;
+
+    cout << "Esse será seu novo salário " << div_s << endl;
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float n1, n2, c_1, c_2, c_3;
+
+    cout << "Digite o valor do seu salário atual: ";
+    cin >> n1;
+    cout << "Digite a porcentagem do reajuste de seu salário: ";
+    cin >> n2;
+
+    c_1 = n2 / 100;
+    c_2 = n1 * c_1;
+    c_3 = c_2 + n1;
+
+    cout << "Esse será seu salário com reajuste incluso: R$" << c_3 << endl;
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float n1, c_2, c_1;
+
+    cout << "Digite a temperatura em graus Celcius: C ";
+    cin >> n1;
+
+    c_1 = 9 * n1 + 160;
+    c_2 = c_1 / 5;
+
+    cout << "Essa temperatura em Fahrenheit é de: F " << c_2 << endl;
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float n1, n3, n2, c_1, c_2, c_3, c_4, c_5;
+
+    cout << "Digite o peso do saco de ração em Kg: " << endl;
+    cin >> n1;
+    cout << "Digite a quantidade de ração fornecida para cada cachorro em g: " << endl;
+    cin >> n2;
+    cout << "Digite a quantidade de cachorros você irá alimentar: " << endl;
+    cin >> n3;
+
+    c_1 = n1 * 1000;
+    c_2 = n2 * n3;
+    c_3 = c_2 * 5;
+    c_4 = c_1 - c_3;
+    c_5 = c_4 / 1000;
+
+    cout << "Essa é a quantidade de ração em gramas que restará no saco: " << c_5 << "Kg" << endl;
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float n1, c_1, c_2, c_3, c_4;
+
+    cout << "Digite o custo de fábrica do veículo: R$";
+    cin >> n1;
+
+    c_1 = n1 * 0.45;
+    c_2 = n1 + c_1;
+    c_3 = c_2 * 0.28;
+    c_4 = c_3 + c_2;
+    
+    cout << "Esse é o custo final do veículo que você deseja: R$" << c_4 << endl;
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float n1, n2, c_0, c_1, c_2, c_3;
+
+    cout << "Digite suas horas trabalhadas: " << endl;
+    cin >> n1;
+    cout << "Digite o valor do salário mínimo: R$" << endl;
+    cin >> n2;
+
+    c_0 = n2 / 5;
+    c_1 = n1 * c_0;
+    c_2 = c_1 * 0.03;
+    c_3 = c_1 - c_2;
+
+    cout << "O salário a receber pelo funcionário é de R$"<< c_3 << endl;
+
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    double n1, n2, n3, n4, c_0, c_1, c_2, c_3, c_4, c_5, c_6;
+//entrada--inicio
+    cout << "Digite o valor depositado em sua conta bancária: R$" << endl;
+    cin >> n1;
+    cout << "Digite o valor da 1ª operação: " << endl;
+    cin >> n2;
+    cout << "Digite o valor da 2ª operação: " << endl;
+    cin >> n3;
+//cauculos
+    c_0 = n2 * 0.0038;
+    c_1 = n2 + c_0;
+    c_2 = n3 * 0.0038;
+    c_3 = n3 + c_2;
+//cauculos2
+    c_4 = c_0 + c_2;
+    c_5 = c_1 + c_3;
+    c_6 = n1 - c_5;
+//final
+    cout << "Essa foi o valor de seus lançamentos: "<< n1 << endl;
+    cout << "Foi descontado de sua conta o valor de R$" << c_4 <<","" devido a tarifação de 0,38% em relação a cada operação bancária de retirada. " << endl;
+    cout << "Seu saldo atual é de R$" << c_6 << endl; 
+    
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+    double n1, n2, n3, d1, x1, x2, x3, x4, eq1, eq2;
+
+    cout << "Digite o valor de A: " << endl;
+    cin >> n1;
+    cout << "Digite o valor de B: " << endl;
+    cin >> n2;
+    cout << "Digite o valor de C: " << endl;
+    cin >> n3;
+
+    //cálculos
+    d1 = (n1 * n1) - (4 * n1 * n3);
+
+    x1 = (-(n2) + sqrt(d1)) / (2 * n1);
+    x2 = (-(n2) - sqrt(d1)) / (2 * n1);
+
+    x3 = n1 * (x1 * x1) + n2 * x1 + n3;
+    x4 = n1 * (x2 * x2) + n2 * x1 + n3;
+
+    //final
+    cout << "O resultado desta equação é = +" << x3 << " ou -" << x4 << endl;
+
+system("pause");
+
+}   
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+    float n1, n2, n3, n4, v1, c1, c2, c3;
+
+    cout << "Digite o preço do litro do combustivel: R$" << endl;
+    cin >> n1;
+    cout << "Digite a kilometragem inicial: " << endl;
+    cin >> n2;
+    cout << "Digite a kilometragem final: " << endl;
+    cin >> n3;
+    cout << "Digite a média de consumo do veículo: " << endl;
+    cin >> n4;
+    cout << "Digite o valor total recebido pelos passageiros: R$" << endl;
+    cin >> v1;
+
+    c1 = (n3 - n2) / n4;
+    c2 = v1 - (n1 * c1);
+
+    cout << "O número de litros de combustível gasto é de: " << c1 << endl;
+    cout << "lucro líquido (R$) do dia: R$" << c2 << endl;
+
+    system("pause");
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+    double n1, n2, PI, n3, areabase, arealateral, areatotalemcm, LTinta, LtTinta, LtTinta1p, arealateral2, arealateral1, custoLt, cm_para_m, m_para_m2, LtTintanecess, CustoTotal, quant_tanq, quant_tanq1, areabase1;
+
+    cout << "Digite quantos tanques cilíndricos de combustível deseja pintar: " << endl;
+    cin >> n1;
+    cout << "Digite a altura desses cilíndros em cm: " << endl;
+    cin >> n2;
+    cout << "Digite o valor do raio desses cilíndros em cm: " << endl;
+    cin >> n3;
+
+    PI = M_PI;
+
+    quant_tanq = n1 * n2;
+    quant_tanq1 = n1 * n3;
+
+    areabase = quant_tanq1 * quant_tanq1;
+    areabase1 = PI * areabase;
+
+    arealateral = 2 * PI;
+    arealateral1 = quant_tanq1 * quant_tanq;
+    arealateral2 = arealateral * arealateral1;
+
+    areatotalemcm = areabase1 + areabase1 + arealateral2;
+
+    LtTinta1p = 3 * 5;
+
+    cm_para_m = areatotalemcm / 100;
+    m_para_m2 = sqrt(cm_para_m);
+
+    LtTintanecess = m_para_m2 / LtTinta1p;
+    CustoTotal = LtTintanecess * 50;
+
+    cout << "A quantidade necessária de latas de tinta é de " << floor(LtTintanecess) << " Latas.\nO custo total para pintar " << n1 << " tanques de combustíveis é de R$" << floor(CustoTotal) << endl;
+    system("pause");
+}
